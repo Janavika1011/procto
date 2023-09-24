@@ -1,0 +1,102 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #e73d81;
+    color: rgb(6, 5, 5);
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+.para{
+    background-color: #e73d81;
+}
+
+/* Style the blog posts */
+.blog {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+}
+/* Style the footer section */
+footer {
+    background-color: #333; /* Change the background color to your preference */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Add padding to the top and bottom of the footer */
+}
+
+/* Center align the footer content */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Style the footer logo */
+.footer-logo img {
+    max-width: 100px; /* Adjust the maximum width of your logo */
+    height: auto;
+}
+
+/* Style the footer links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+.footer-links a:hover {
+    color: #ff6b81; /* Change the color on hover */
+}
+
+/* Style the footer social icons */
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social li {
+    margin-right: 10px;
+}
+
+.footer-social img {
+    max-width: 30px; /* Adjust the maximum width of your social icons */
+    height: auto;
+}
+
+
+
+
+
+/* Style the footer */
+footer {
+    background-color: #111011;
+    color: rgb(238, 21, 126);
+    text-align: center;
+    padding: 10px 0;
+}

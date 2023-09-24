@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trending now</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+<style>
+     .moist-image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            background-color: #100f10;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #e73d81;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #100f0f;
+        }
+        /* Style for the wishlist icon */
+        .fa-heart {
+            color: #e73d81; /* Your desired color */
+            font-size: 20px; /* Adjust the size as needed */
+            margin-left: 10px; /* Add some spacing between the icon and button */
+        }
+        .fa-heart:hover {
+        color: #51e524; /* Change to your desired hover color */
+}
+
+/* Change the heart color when clicked */
+        .fa-heart.clicked {
+            color: #000800; /* Change to your desired clicked color */
+        }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1><center>Trending now</center></h1>
+    </div>
+
+<div class="Image">
+    <img src="makeup.jpg" alt="Example Image">
+</div>
+
+<!-- Move the .moisturizer div outside of the .Image div -->
+<div class="moisturizer">
+    
+    <div class="image-container">
+        <!-- First image with Buy Now button and price -->
+        <div class="moist-image-container">
+            <img src="lip2.jpg" alt="Moisturizer 1" class="moist-image">
+            <span class="price">Rs.290</span>
+            <button class="buy-button">Buy Now</button>
+            <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+        </div>
+        
+        <!-- Second image with Buy Now button and price -->
+        <div class="moist-image-container">
+            <img src="masc1.jpg" alt="Moisturizer 2" class="moist-image">
+            <span class="price">Rs.400</span>
+            <button class="buy-button">Buy Now</button>
+            <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+        </div>
+        
+        <!-- Third image with Buy Now button and price -->
+        <div class="moist-image-container">
+            <img src="eye1.jpg" alt="Moisturizer 3" class="moist-image">
+            <span class="price">Rs.100</span>
+            <button class="buy-button">Buy Now</button>
+            <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+        </div>
+        
+        <!-- Fourth image with Buy Now button and price -->
+        <div class="moist-image-container">
+            <img src="eye2.jpg" alt="Moisturizer 4" class="moist-image">
+            <span class="price">Rs.450</span>
+            <button class="buy-button">Buy Now</button>
+            <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+        </div>
+    </div>
+</div>
+<div class="moisturizer">
+    
+    <div class="image-container">
+        <!-- First image with Buy Now button and price -->
+        <div class="moist-image-container">
+            <img src="comp1.jpg" alt="Serum 1" class="moist-image">
+            <span class="price">Rs.200</span>
+            <button class="buy-button">Buy Now</button>
+            <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+        </div>
+        
+        <!-- Second image with Buy Now button and price -->
+        <div class="moist-image-container">
+            <img src="sha1.jpg" alt="Serum 2" class="moist-image">
+            <span class="price">Rs.290</span>
+            <button class="buy-button">Buy Now</button>
+            <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+        </div>
+        
+        <!-- Third image with Buy Now button and price -->
+        <div class="moist-image-container">
+            <img src="sha2.jpg" alt="Serum 3" class="moist-image">
+            <span class="price">Rs.350</span>
+            <button class="buy-button">Buy Now</button>
+            <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+        </div>
+        
+        <!-- Fourth image with Buy Now button and price -->
+        <div class="moist-image-container">
+            <img src="comp2.jpg" alt="Serum 4" class="moist-image">
+            <span class="price">Rs.280</span>
+            <button class="buy-button">Buy Now</button>
+            <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+<script>
+   
+    function toggleHeart(element) {
+    element.classList.toggle("clicked");
+}
+</script>
+</body>
+</html>

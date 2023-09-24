@@ -1,0 +1,168 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #333;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px; /* Add padding-right to create space on the right side of the navbar */
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+/* Style for the "Contact" link */
+li:last-child {
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e40f6c;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0c0808;
+    min-width: 20px; /* Adjust the width as per your preference */
+    z-index: 1;
+}
+
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    top: 100%;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: hwb(334 6% 11%);
+    
+}
+.brand {
+    color: hwb(334 6% 11%);
+    font-weight: bolder;
+    margin-left: auto; 
+    margin-left: 40px;
+    font-size: xx-large;
+
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: hwb(330 98% 1%);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: hwb(334 6% 11%);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #0f0e0e;
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+.slide{
+    padding-top: 20px;
+    background-color: #e40f6c;
+    width: auto;
+    
+}
+.Image img {
+    width: 100%; /* Set the width to 100% for full width */
+    height: 450px; /* Automatically adjust the height to maintain aspect ratio */
+    max-width: none; /* Remove the maximum width constraint */
+    max-height: none; /* Remove the maximum height constraint */
+}
+.moisturizer {
+    text-align: center; /* Center-align the content */
+}
+
+.image-container {
+    display: flex; /* Use flexbox to create horizontal layout */
+    justify-content: space-between; /* Add space between images */
+    align-items: center; /* Center-align vertically */
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.moist-image {
+    width: 200px; /* Set the width of the images */
+    height: 200px; /* Maintain aspect ratio */
+}

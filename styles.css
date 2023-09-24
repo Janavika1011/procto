@@ -1,0 +1,32 @@
+.Image img {
+    width: 100%; /* Set the width to 100% for full width */
+    height: 450px; /* Automatically adjust the height to maintain aspect ratio */
+    max-width: none; /* Remove the maximum width constraint */
+    max-height: none; /* Remove the maximum height constraint */
+}
+.moisturizer {
+    text-align: center; /* Center-align the content */
+}
+
+.image-container {
+    display: flex; /* Use flexbox to create horizontal layout */
+    justify-content: space-between; /* Add space between images */
+    align-items: center; /* Center-align vertically */
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.moist-image {
+    width: 200px; /* Set the width of the images */
+    height: 200px; /* Maintain aspect ratio */
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #e71e7c; /* Text color on top of the background image */
+    background-color: rgb(250, 249, 249);
+}

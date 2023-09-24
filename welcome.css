@@ -1,0 +1,74 @@
+/* Styling for the welcome page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0b0b; /* Set the background color to your preference */
+}
+
+.welcome-container {
+    text-align: center;
+    padding: 50px;
+}
+
+header {
+    color: #121111;
+    background-color: #de1267; /* Header text color */
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #141212; /* Subtitle text color */
+}
+
+main {
+    animation: fadeIn 2s ease; /* Add a fade-in animation */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-top: 30px;
+    color: #de0b63; /* Footer text color */
+}
+/* Style the button */
+.start-button {
+    background-color: #f10d74; /* Button background color */
+    color: #080707; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    font-size: 18px; /* Button font size */
+    border: none;
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+    margin-top: 20px; /* Add a gap above the button */
+}
+
+.start-button:hover {
+    background-color: #fcdfe9; /* Change the background color on hover */
+}
+
+/* Add a gap below the images */
+.image-container {
+    margin-bottom: 20px; /* Add a margin below the image container */
+}
+
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

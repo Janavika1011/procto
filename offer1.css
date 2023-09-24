@@ -1,0 +1,83 @@
+/* Set the background image for the body and make it cover the entire viewport */
+body {
+    margin: 0;
+    padding: 0;
+     /* Replace 'sale1.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+    background-position: top left; /* Position the background image in the top-left corner */
+    color: white; /* Set text color to contrast with the image */
+}
+
+/* Center-align the text in the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style the image container */
+.Image {
+    display: flex; /* Make the images flex containers */
+    justify-content: flex-start; /* Align images to the left within the container */
+}
+
+.Image img {
+    max-width: 100%; /* Ensure the images don't exceed their original size */
+    height: auto; /* Maintain the aspect ratio of the images */
+    margin-right: 0; /* Remove margin between the images */
+}
+
+/* Style the exclusive offer heading */
+.heading {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+    padding: 50px; /* Add padding for better visibility */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: rgb(241, 27, 145);
+    animation: fadeIn 2s ease-in-out; 
+}
+
+/* Add animation to the exclusive offer heading */
+
+
+.offer header {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(245, 33, 150);
+}
+
+/* Add animation to the text */
+.offer header {
+    animation: bounce 2s infinite;
+}
+.image-container {
+    display: flex; /* Use flexbox to create horizontal layout */
+    justify-content: space-between; /* Add space between images */
+    align-items: center; /* Center-align vertically */
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}

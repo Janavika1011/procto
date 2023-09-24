@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="offer1.css">
+    <link rel="stylesheet" href="sidebar-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>BeautyBAE</title>
+    <style>
+       
+        /* Add CSS styles for the "Buy Now" buttons */
+        .moist-image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            background-color: #100f10;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #e73d81;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #100f0f;
+        }
+        /* Style for the wishlist icon */
+        .fa-heart {
+            color: #e73d81; /* Your desired color */
+            font-size: 20px; /* Adjust the size as needed */
+            margin-left: 10px; /* Add some spacing between the icon and button */
+        }
+        .fa-heart:hover {
+        color: #51e524; /* Change to your desired hover color */
+}
+
+/* Change the heart color when clicked */
+        .fa-heart.clicked {
+            color: #000800; /* Change to your desired clicked color */
+        }
+        .offer-option {
+            text-align: center;
+            font-size: 18px;
+            color: #e73d81; /* Your desired color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <header><center>EXCLUSIVE OFFERS... FROM 23 TO 30</center></header>
+    </div>
+    <div class="container">
+        <div class="Image">
+            <img src="sale2.jpg" alt="Example Image">
+            <img src="sales3.jpg" alt="Example Image">
+        </div>
+        <div class="offer">
+            <header><center>50% OFFER ON EVERY PRODUCT!!!!</center></header>
+        </div>
+    </div>
+    <div class="moisturizer">
+        <h1><center>Moisturizer</center></h1>
+        <div class="image-container">
+            <!-- First image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="lip2.jpg" alt="Moisturizer 1" class="moist-image">
+                <span class="price">Rs.190</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            <div class="offer-option">
+                <p>50% OFF</p>
+            </div>
+            
+            <!-- Second image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="mask.jpg" alt="Moisturizer 2" class="moist-image">
+                <span class="price">Rs.200</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            <div class="offer-option">
+                <p>50% OFF</p>
+            </div>
+            
+            <!-- Third image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="shads1.jpg" alt="Moisturizer 3" class="moist-image">
+                <span class="price">Rs.300</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            <div class="offer-option">
+                <p>50% OFF</p>
+            </div>
+            
+            <!-- Fourth image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="ss.jpg" alt="Moisturizer 4" class="moist-image">
+                <span class="price">Rs.250</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            <div class="offer-option">
+                <p>50% OFF</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

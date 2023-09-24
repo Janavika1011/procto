@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>BeautyBAE</title>
+    <style>
+        /* Add CSS styles for the "Buy Now" buttons */
+        .moist-image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            background-color: #100f10;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #e73d81;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #100f0f;
+        }
+        /* Style for the wishlist icon */
+        .fa-heart {
+            color: #e73d81; /* Your desired color */
+            font-size: 20px; /* Adjust the size as needed */
+            margin-left: 10px; /* Add some spacing between the icon and button */
+        }
+        .fa-heart:hover {
+        color: #51e524; /* Change to your desired hover color */
+}
+
+/* Change the heart color when clicked */
+        .fa-heart.clicked {
+            color: #000800; /* Change to your desired clicked color */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Style for the footer content div */
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        /* Style for the footer logo */
+        .footer-logo img {
+            max-width: 100px;
+        }
+
+        /* Style for the footer links */
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Style for the footer social icons */
+        .footer-social ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-social li {
+            margin-right: 10px;
+        }
+
+        .footer-social img {
+            max-width: 30px;
+        }
+
+        /* Style for the footer bottom text */
+        .footer-bottom {
+            background-color: #111;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Your navigation items here -->
+        <button class="openbtn" onclick="openNav()"> ☰</button>
+        <li class="brand">BeautyBAE</li>
+        <li><a href="http://127.0.0.1:5500/trending.html">Trending Now</a></li>
+        <li class="dropdown">
+            <a href="#">Offers</a>
+            <div class="dropdown-content">
+                <a href="http://127.0.0.1:5500/discount.html">Discounts</a>
+                <a href="#">Specials</a>
+            </div>
+        </li>
+        <li><a href="#">Combos</a></li>
+        <li><a href="http://127.0.0.1:5500/blog.html">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        
+        <li class="help"> <a>Help</a></li>
+            
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">Orders</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Account</a>
+            <a href="http://127.0.0.1:5500/welcome.html">Logout</a>
+        </div>
+    </nav>
+    <div class="Image">
+        <img src="lip.jpg" alt="Example Image">
+    </div>
+    
+    <!-- Move the .moisturizer div outside of the .Image div -->
+    <div class="moisturizer">
+        <h1><center>Moisturizer</center></h1>
+        <div class="image-container">
+            <!-- First image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="moist11.jpg" alt="Moisturizer 1" class="moist-image">
+                <span class="price">Rs.190</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Second image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="moist2.jpg" alt="Moisturizer 2" class="moist-image">
+                <span class="price">Rs.200</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Third image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="moist3.jpg" alt="Moisturizer 3" class="moist-image">
+                <span class="price">Rs.300</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Fourth image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="moist4.jpg" alt="Moisturizer 4" class="moist-image">
+                <span class="price">Rs.250</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+        </div>
+    </div>
+    <div class="moisturizer">
+        <h1><center>Face Serum</center></h1>
+        <div class="image-container">
+            <!-- First image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="serum1.jpg" alt="Serum 1" class="moist-image">
+                <span class="price">Rs.300</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Second image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="serum2.jpg" alt="Serum 2" class="moist-image">
+                <span class="price">Rs.250</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Third image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="moist33.jpg" alt="Serum 3" class="moist-image">
+                <span class="price">Rs.400</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Fourth image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="serum4.jpg" alt="Serum 4" class="moist-image">
+                <span class="price">Rs.500</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+        </div>
+    </div>
+    <div class="moisturizer">
+        <h1><center>Sunscreen</center></h1>
+        <div class="image-container">
+            <!-- First image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="screen1.jpg" alt="Screen 1" class="moist-image">
+                <span class="price">Rs.340</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Second image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="screen2.jpg" alt="Screen 2" class="moist-image">
+                <span class="price">Rs.200</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Third image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="screen3.jpg" alt="Screen 3" class="moist-image">
+                <span class="price">Rs.600</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Fourth image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="screen4.jpg" alt="Screen 4" class="moist-image">
+                <span class="price">Rs.230</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+        </div>
+    </div>
+    <div class="moisturizer">
+        <h1><center>Primer</center></h1>
+        <div class="image-container">
+            <!-- First image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="primer1.jpg" alt="Primer 1" class="moist-image">
+                <span class="price">Rs.450</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Second image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="primer2.jpg" alt="Primer 2" class="moist-image">
+                <span class="price">Rs.280</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Third image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="primer3.jpg" alt="Primer 3" class="moist-image">
+                <span class="price">Rs.340</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+            
+            <!-- Fourth image with Buy Now button and price -->
+            <div class="moist-image-container">
+                <img src="primer4.jpg" alt="Primer 4" class="moist-image">
+                <span class="price">Rs.670</span>
+                <button class="buy-button">Buy Now</button>
+                <i class="far fa-heart" onclick="toggleHeart(this)"></i> <!-- Heart icon -->
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="BeautyBAE Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 BeautyBAE. All rights reserved.
+        </div>
+    </footer>
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+        function toggleHeart(element) {
+        element.classList.toggle("clicked");
+    }
+    </script>
+</body>
+</html>
